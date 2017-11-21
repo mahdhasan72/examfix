@@ -1,0 +1,525 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header {
+    background: url(../img/bg-1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 960px;
+    position: relative;
+}
+
+.logo {
+    padding-top: 35px;
+}
+
+.navbar_style {
+    border: none;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.navbar_style .navbar-nav > li > a {
+    padding: 16px 41px;
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    color: white !important;
+    font-weight: normal;
+}
+
+.navbar_style .navbar-nav > li > a:focus {}
+
+
+.icon_style {
+    margin-top: 20px;
+    border: none;
+    border-radius: none;
+}
+
+.icon_style .navbar-nav li a {
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.header_content h2 {
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.header_content .header_text1 {
+    padding-top: 245px;
+}
+
+.header_content p {
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.header_content .header_para {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.header_content .btn_custom1 {
+    padding: 16px 50px;
+    font-size: 20px;
+    background-color: #fc6a42;
+    border: none;
+    border-radius: none;
+}
+
+.header_content .btn_custom1 a {
+    color: white;
+    font-family: 'ubuntu';
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.header_content .btn_custom2 {
+    padding: 16px 50px;
+    font-size: 20px;
+    background-color: #4466c9;
+    border: none;
+    border-radius: none;
+}
+
+.header_content .btn_custom2 a {
+    color: white;
+    font-family: 'ubuntu';
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.header_mbl_img {
+    padding-top: 150px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.caret_setup {
+    position: absolute;
+    right: 48%;
+    top: 48%;
+}
+
+#mid {
+    min-height: 550px;
+}
+
+.mid h2 {
+    font-family: ubuntu;
+    font-size: 36px;
+    font-weight: bold;
+    color: #648cff;
+    text-transform: uppercase;
+    padding-top: 133px;
+}
+
+.mid h5 {
+    font-family: ubuntu;
+    font-size: 18px;
+    color: #999999;
+    margin-top: 0px;
+    margin-bottom: 136px;
+}
+
+.img_feature {
+    width: 30%;
+    margin-top: 28px;
+}
+
+.feature_content {
+    width: 70%;
+    float: right;
+}
+
+.single_feature .feature_content h2 {
+    font-family: ubuntu;
+}
+
+.single_feature .feature_content p {
+    font-family: ubuntu;
+    color: #999999;
+    font-size: 18px;
+}
+
+#slider {
+    min-height: 940px;
+    position: relative;
+}
+
+.slider h2 {
+    font-family: ubuntu;
+    font-size: 36px;
+    font-weight: bold;
+    color: #648cff;
+    text-transform: uppercase;
+    padding-top: 133px;
+}
+
+.slider_p {
+    font-family: ubuntu;
+    font-size: 18px;
+    color: #999999;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+.slider {
+    position: relative;
+    margin-top: 80px;
+}
+
+.slider_img {
+    position: absolute;
+    right: 14%;
+}
+
+.slider_left {
+    position: absolute;
+    top: 305px;
+    right:90%;
+}
+
+.slider_right {
+    position: absolute;
+    top: 305px;
+    left: 86%;
+}
+#screenshot{
+    margin-top: 200px;
+}
+.ss h2 {
+    font-family: ubuntu;
+    font-size: 36px;
+    font-weight: bold;
+    color: #648cff;
+    text-transform: uppercase;
+    padding-top: 130px;
+}
+
+.ss p {
+    font-family: ubuntu;
+    font-size: 18px;
+    color: #999999;
+    margin-top: 18px;
+    margin-bottom: 200px;
+    margin-top: 1px;
+}
+#screenshots{}
+.screenshot_feature{
+    margin-top: 200px;
+    margin-bottom: 30px;
+    min-height: 600px
+}
+.screenshots_feature_img{}
+.screenshots_feature_content{
+    width: 95%;
+    margin-top: 70px
+}
+.screenshot_h2{
+  font-family: ubuntu;
+    font-size: 36px;
+    font-weight: bold;
+    color: #648cff 
+}
+.screenshot_p{
+    font-family: ubuntu;
+    font-size: 24px;
+    color: #999999;
+}
+#comment {
+    min-height: 800px;
+}
+
+.comments_h2 {
+    font-family: ubuntu;
+    font-size: 36px;
+    font-weight: bold;
+    color: #648cff;
+    text-transform: uppercase;
+    padding-top: 133px;
+}
+
+.comments_p {
+    font-family: ubuntu;
+    font-size: 18px;
+    color: #999999;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+.quotes h3{
+    font-family: ubuntu;
+    font-size: 25px;
+    color: #999999;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+#headers{
+    min-height: 150px;
+    background-color: black;
+}
+
+
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
